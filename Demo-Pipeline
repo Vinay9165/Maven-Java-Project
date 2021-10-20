@@ -1,0 +1,19 @@
+def greet = 'welcome to my home'
+pipeline {
+    agent any
+
+    
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello Vinay Gubbala'
+            }
+        }
+        stage('Welcome') {
+            steps {
+                echo "$greet"
+            }
+        }
+    }
+    
+}
